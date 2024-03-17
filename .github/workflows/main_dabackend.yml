@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - DABackend
+name: Build and deploy JAR app to Azure Web App - DAbackend
 
 on:
   push:
@@ -48,15 +48,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8AED5525A0D94737AEBD2D494138DE00 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A9B1E3B481D743538A38C3A77C65DC4B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AF65FD50C28E471CA1140F81F533FF69 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_514862E873A743388075B4B197745F58 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EC8719238D554AB8B9CF8706D51E35C9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8183E3A9F8A747CA9322690A798BCB10 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'DABackend'
+          app-name: 'DAbackend'
           slot-name: 'Production'
           package: '*.jar'
           
