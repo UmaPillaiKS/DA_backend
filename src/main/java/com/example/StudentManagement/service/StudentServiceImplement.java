@@ -23,7 +23,7 @@ public class StudentServiceImplement implements StudentService {
 
 
 	@Override
-	public void AddStudent(Student student) {
+	public void addStudent(Student student) {
 		this.stuRepo.save(student);
 		
 	}

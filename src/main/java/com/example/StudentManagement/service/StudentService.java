@@ -7,6 +7,6 @@ import com.example.StudentManagement.model.Student;
 public interface StudentService {
 	
 	List<Student> getAllStudents();
-	void AddStudent(Student student);
+	void addStudent(Student student);
 
 }
